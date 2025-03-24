@@ -1,0 +1,31 @@
+services:
+  # PHP 서비스
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: leaning_php_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - app_network
+
+  # Nginx 서비스
+  webserver:
+    image: nginx:alpine
+    container_name: leaning_nginx_server
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d/
+    networks:
+      - app_network
+
+# 네트워크 정의
+networks:
+  app_network:
+    driver: bridge
