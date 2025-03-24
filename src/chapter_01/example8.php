@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>러닝 PHP</title>
+  <title>Document</title>
 </head>
 <body>
-  <h1>러닝 PHP</h1>
-  <div>
-    <h2>PART 1. 처음 만나는 PHP</h2>
-    <? include_once('src/chapter_01/index.php'); ?>
-  </div>
+  오 더하기 오는:
+  <?php print 5 + 5; ?>
+  <p>
+  사 더하기 사는:
+  <?php
+    print 4 + 4;
+  ?>
+  <p>
 </body>
 </html>
