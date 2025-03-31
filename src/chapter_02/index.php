@@ -1,4 +1,5 @@
 <h3>CHAPTER 02. 데이터: 텍스트와 숫자 다루기</h3>
+<h4>2.1 텍스트</h4>
 <ul>
   <li>
     <a href="src/chapter_02/example1.php">2-1 here 문서</a>
@@ -41,5 +42,11 @@
   </li>
   <li>
     <a href="src/chapter_02/example14.php">2-14 str_replace() 사용법</a>
+  </li>
+</ul>
+<h4>2.2 숫자</h4>
+<ul>
+  <li>
+    <a href="src/chapter_02/example15.php">2-15 숫자</a>
   </li>
 </ul>
